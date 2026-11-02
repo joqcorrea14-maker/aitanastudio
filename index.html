@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Aitana Studio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Aitana Studio · Muñecas 29, San Miguel de Tucumán. Indumentaria femenina seleccionada: vestidos, tops, jeans, shorts y accesorios. Reservá por WhatsApp, retirá en el local o te lo enviamos.">
@@ -1266,7 +1267,7 @@ const COLOR_HEX = {
 const colorStyle = c => (COLOR_HEX[c] || "#999").includes("gradient") ? `background:${COLOR_HEX[c]}` : `background:${COLOR_HEX[c]||"#999"}`;
 
 /* Imágenes: ruta relativa /img/ (publicadas junto al artifact) */
-const img = f => f ? `img/${f}` : null;
+const img = f => f ? `${f}` : null;
 
 /* ============== Estado y filtros ============== */
 const state = { cat:"all", color:"all", size:"all", q:"", sort:"new" };
